@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <img src="./img/logo.gif" alt="Logo-Conversor-Dinheiro" class="logo">
+
+    <main>
+
+        <label class="para-converter">
+            <p class="p-label">Converter <b>de</b></p>
+            <select>
+                <option class="opcao">R$ Real Brasileiro</option>
+            </select>
+        </label>
+
+        <label class="convertido">
+            <p class="p-label">Converter <b>para</b></p>
+            <select class="select-two">
+                <option value="dolar">$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="bitcoin">Bitcoin</option>
+            </select>
+        </label>
+
+        <label> <p class="p-label">Valor</p>
+            <input placeholder="R$ 10.000,00" class="valor">
+        </label>
+
+        <button onclick="convertValues()" class="convert-button">Converter</button>
+
+        <section>
+
+            <div>
+                <img src="./assets/real.png" alt="logo-moeda-a-converter">
+                <p class="p-moeda" id="p-moeda-cima">Real</p>
+                <p class="p-valor-para-converter">R$ 0,00</p>
+            </div>
+
+            <img src="./assets/seta-roxa.png" alt="seta-indicando-abaixo">
+
+            <div>
+                <img src="./assets/dolar.png" alt="logo-moeda-convertida" class="imagem-moeda-convertida">
+                <p class="p-moeda" id="p-moeda-baixo">Dólar</p>
+                <p class="p-valor-convertido">$ 0,00</p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
